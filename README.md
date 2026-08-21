@@ -1,7 +1,7 @@
 # Foto Space — Official Releases & Downloads
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Satriaa11/fotoyu-auto/main/resources/icon.png" width="96" height="96" alt="Foto Space Logo" />
+  <img src="assets/logo.png" width="128" height="128" alt="Foto Space Logo" />
 </p>
 
 <p align="center">
