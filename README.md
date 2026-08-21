@@ -11,7 +11,6 @@
 <p align="center">
   <a href="https://github.com/Stromzzz/fotospace-releases/releases/latest"><img src="https://img.shields.io/github/v/release/Stromzzz/fotospace-releases?label=Latest%20Version&color=blue" alt="Latest Release" /></a>
   <img src="https://img.shields.io/badge/Platforms-Windows%20%7C%20macOS%20%7C%20Linux-success" alt="Platforms" />
-  <img src="https://img.shields.io/badge/Electron-v43-orange" alt="Electron" />
 </p>
 
 ---
@@ -69,8 +68,7 @@ Silakan unduh installer sesuai dengan sistem operasi perangkat Anda di bawah ini
 
 ## 🔄 Feed Auto-Update (Internal)
 
-Repository ini juga berfungsi sebagai endpoint distribusi update otomatis untuk `electron-updater`:
-
+Repository ini juga berfungsi sebagai endpoint distribusi pembaruan otomatis aplikasi:
 - **Windows Feed**: `latest.yml`
 - **Linux Feed**: `latest-linux.yml`
 - **macOS Feed**: `latest-mac.yml`
