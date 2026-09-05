@@ -21,47 +21,61 @@ Silakan unduh installer sesuai dengan sistem operasi perangkat Anda di bawah ini
 
 | Sistem Operasi | Tipe File | Rekomendasi Unduhan | Keterangan |
 | :--- | :--- | :--- | :--- |
-| **Windows** (64-bit) | `.exe` | [**`foto-space-1.1.8-setup.exe`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.1.8/foto-space-1.1.8-setup.exe) | **Installer Wizard (Desktop & Start Menu Shortcut)** |
-| **Windows** (Portable) | `.7z` | [**`foto-space-1.1.8-setup.7z`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.1.8/foto-space-1.1.8-setup.7z) | Format portable kompresi tinggi (LZMA2 solid) |
-| **Windows** (Portable) | `.zip` | [**`foto-space-1.1.8-setup.zip`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.1.8/foto-space-1.1.8-setup.zip) | Format portable standar Zip |
-| **macOS** (Apple Silicon) | `.dmg` | [**`foto-space-1.1.8-arm64.dmg`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.1.8/foto-space-1.1.8-arm64.dmg) | Untuk Mac M1, M2, M3, M4 Series |
-| **macOS** (Intel) | `.dmg` | [**`foto-space-1.1.8-x64.dmg`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.1.8/foto-space-1.1.8-x64.dmg) | Untuk Mac berbasis prosesor Intel x64 |
-| **Linux** (Universal) | `.AppImage` | [**`foto-space-1.1.8.AppImage`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.1.8/foto-space-1.1.8.AppImage) | Mandiri tanpa instalasi (Ubuntu, Debian, Fedora, Arch) |
+| **Windows** (64-bit) | `.exe` | [**`foto-space-1.2.1-setup.exe`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.2.1/foto-space-1.2.1-setup.exe) | **Installer Wizard (Desktop & Start Menu Shortcut)** |
+| **macOS** (Apple Silicon) | `.dmg` | [**`foto-space-1.2.1-arm64.dmg`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.2.1/foto-space-1.2.1-arm64.dmg) | Untuk Mac M1, M2, M3, M4 Series |
+| **macOS** (Intel) | `.dmg` | [**`foto-space-1.2.1-x64.dmg`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.2.1/foto-space-1.2.1-x64.dmg) | Untuk Mac berbasis prosesor Intel x64 |
+| **Linux** (Universal) | `.AppImage` | [**`foto-space-1.2.1.AppImage`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.2.1/foto-space-1.2.1.AppImage) | Mandiri tanpa instalasi (Ubuntu, Debian, Fedora, Arch) |
 
 ---
 
 ## 🛠️ Panduan Instalasi & Menjalankan
 
 ### 1. Windows
-1. Unduh file [**`foto-space-1.1.8-setup.exe`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.1.8/foto-space-1.1.8-setup.exe).
+1. Unduh file [**`foto-space-1.2.1-setup.exe`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.2.1/foto-space-1.2.1-setup.exe).
 2. Klik ganda file `.exe` dan ikuti wizard instalasi.
 3. *Catatan Windows SmartScreen:* Jika muncul peringatan *"Windows protected your PC"*, klik **More info** $\rightarrow$ klik **Run anyway**.
 
 ### 2. macOS
-1. Unduh file `.dmg` yang sesuai dengan prosesor Mac Anda ([**Apple Silicon arm64**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.1.8/foto-space-1.1.8-arm64.dmg) atau [**Intel x64**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.1.8/foto-space-1.1.8-x64.dmg)).
-2. Buka file `.dmg`, lalu seret icon **Foto Space** ke folder **Applications**.
-3. *Catatan Keamanan macOS:* Jika muncul notifikasi *"App is damaged / Unidentified Developer"*, jalankan perintah berikut di Terminal:
-   ```bash
-   xattr -cr /Applications/Foto\ Space.app
-   ```
-   Atau klik kanan pada icon Foto Space di folder Applications $\rightarrow$ pilih **Open** $\rightarrow$ klik **Open**.
+1. Unduh file `.dmg` yang sesuai dengan arsitektur Mac Anda:
+   - **Apple Silicon (M1/M2/M3/M4)**: gunakan file dengan akhiran `-arm64.dmg`.
+   - **Intel**: gunakan file dengan akhiran `-x64.dmg`.
+2. Buka file `.dmg` hasil unduhan.
+3. **PENTING (Instalasi)**: **Seret (drag & drop)** ikon **Foto Space** ke folder **Applications** di sebelahnya.
+   - *Catatan*: Jangan double-click *"Uninstall Foto Space"* di dalam DMG jika ingin menginstal aplikasi.
+4. Buka **Foto Space** dari folder **Applications**.
+5. *Jika muncul peringatan Gatekeeper macOS ("tidak dapat dibuka karena tidak diunduh dari App Store" / "pengembang tidak teridentifikasi")*:
+   - **Cara 1 (System Settings - Rekomendasi macOS Ventura/Sonoma/Sequoia)**:
+     1. Buka **Pengaturan Sistem (System Settings)** $\rightarrow$ **Privasi & Keamanan (Privacy & Security)**.
+     2. Pada bagian *Keamanan*, pastikan opsi disetel ke **"App Store dan pengembang teridentifikasi"**.
+     3. Cari notifikasi *"Foto Space diblokir..."* lalu klik tombol **Tetap Buka (Open Anyway)**.
+     4. Masukkan password Mac / Touch ID lalu pilih **Buka (Open)**.
+   - **Cara 2 (Terminal - Cepat & Langsung Berhasil)**:
+     Buka aplikasi **Terminal**, jalankan perintah berikut lalu tekan Enter:
+     ```bash
+     xattr -cr "/Applications/Foto Space"*
+     ```
+     *(Cukup gunakan nama aplikasi **Foto Space**, tanda `*` otomatis mengenali aplikasi di macOS).*
+   - **Cara 3 (Finder)**:
+     Buka folder **Applications** $\rightarrow$ Klik kanan (Control + Klik) pada icon **Foto Space** $\rightarrow$ pilih **Buka (Open)** $\rightarrow$ klik **Buka**.
 
 ### 3. Linux
-1. Unduh file [**`foto-space-1.1.8.AppImage`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.1.8/foto-space-1.1.8.AppImage).
+1. Unduh file [**`foto-space-1.2.1.AppImage`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.2.1/foto-space-1.2.1.AppImage).
 2. Berikan izin eksekusi melalui terminal atau file manager:
    ```bash
-   chmod +x foto-space-1.1.8.AppImage
-   ./foto-space-1.1.8.AppImage
+   chmod +x foto-space-1.2.1.AppImage
+   ./foto-space-1.2.1.AppImage
    ```
 
 ---
 
-## ✨ Fitur Utama (v1.1.8)
+## ✨ Fitur Utama (v1.2.1)
 
-- **Otomasi Upload Foto & Video**: Monitoring folder lokal dan upload otomatis ke event/folder FotoYu.
-- **Dukungan Video Cerdas**: Transcoding otomatis dan ekstraksi thumbnail video berkecepatan tinggi.
-- **Pembaruan Otomatis (Auto-Update)**: Notifikasi dan unduhan pembaruan langsung di dalam aplikasi saat versi baru rilis.
-- **Form Kritik & Saran (Feedback)**: Kirim laporan kendala atau masukan fitur langsung dari sidebar aplikasi.
+- **Upload Foto & Video ke FotoYu**: Pilih folder lewat dialog sistem OS, scan, lalu unggah ke galeri.
+- **Kompresi Hemat (default 50%)**: Perkecil foto otomatis agar hemat kuota; preset Hemat / Seimbang / Tajam + slider persen.
+- **Orientasi otomatis**: Portrait & landscape di folder campuran mengikuti file asli (EXIF / rotasi video).
+- **Dukungan Video**: Transcode & ekstraksi frame ZIP sesuai batas FotoYu (maks ~4 detik).
+- **Pembaruan Otomatis (Auto-Update)**: Notifikasi dan unduhan pembaruan langsung di dalam aplikasi.
+- **Form Kritik & Saran (Feedback)**: Kirim laporan kendala atau masukan fitur dari sidebar.
 - **Proteksi Lisensi Perangkat**: Aktivasi aman berbasis kunci lisensi terenkripsi.
 
 ---
