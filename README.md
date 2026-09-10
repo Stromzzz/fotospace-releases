@@ -21,17 +21,17 @@ Silakan unduh installer sesuai dengan sistem operasi perangkat Anda di bawah ini
 
 | Sistem Operasi | Tipe File | Rekomendasi Unduhan | Keterangan |
 | :--- | :--- | :--- | :--- |
-| **Windows** (64-bit) | `.exe` | [**`foto-space-1.2.1-setup.exe`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.2.1/foto-space-1.2.1-setup.exe) | **Installer Wizard (Desktop & Start Menu Shortcut)** |
-| **macOS** (Apple Silicon) | `.dmg` | [**`foto-space-1.2.1-arm64.dmg`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.2.1/foto-space-1.2.1-arm64.dmg) | Untuk Mac M1, M2, M3, M4 Series |
-| **macOS** (Intel) | `.dmg` | [**`foto-space-1.2.1-x64.dmg`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.2.1/foto-space-1.2.1-x64.dmg) | Untuk Mac berbasis prosesor Intel x64 |
-| **Linux** (Universal) | `.AppImage` | [**`foto-space-1.2.1.AppImage`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.2.1/foto-space-1.2.1.AppImage) | Mandiri tanpa instalasi (Ubuntu, Debian, Fedora, Arch) |
+| **Windows** (64-bit) | `.exe` | [**`foto-space-1.2.2-setup.exe`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.2.2/foto-space-1.2.2-setup.exe) | **Installer Wizard (Desktop & Start Menu Shortcut)** |
+| **macOS** (Apple Silicon) | `.dmg` | [**`foto-space-1.2.2-arm64.dmg`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.2.2/foto-space-1.2.2-arm64.dmg) | Untuk Mac M1, M2, M3, M4 Series |
+| **macOS** (Intel) | `.dmg` | [**`foto-space-1.2.2-x64.dmg`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.2.2/foto-space-1.2.2-x64.dmg) | Untuk Mac berbasis prosesor Intel x64 |
+| **Linux** (Universal) | `.AppImage` | [**`foto-space-1.2.2.AppImage`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.2.2/foto-space-1.2.2.AppImage) | Mandiri tanpa instalasi (Ubuntu, Debian, Fedora, Arch) |
 
 ---
 
 ## 🛠️ Panduan Instalasi & Menjalankan
 
 ### 1. Windows
-1. Unduh file [**`foto-space-1.2.1-setup.exe`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.2.1/foto-space-1.2.1-setup.exe).
+1. Unduh file [**`foto-space-1.2.2-setup.exe`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.2.2/foto-space-1.2.2-setup.exe).
 2. Klik ganda file `.exe` dan ikuti wizard instalasi.
 3. *Catatan Windows SmartScreen:* Jika muncul peringatan *"Windows protected your PC"*, klik **More info** $\rightarrow$ klik **Run anyway**.
 
@@ -59,16 +59,16 @@ Silakan unduh installer sesuai dengan sistem operasi perangkat Anda di bawah ini
      Buka folder **Applications** $\rightarrow$ Klik kanan (Control + Klik) pada icon **Foto Space** $\rightarrow$ pilih **Buka (Open)** $\rightarrow$ klik **Buka**.
 
 ### 3. Linux
-1. Unduh file [**`foto-space-1.2.1.AppImage`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.2.1/foto-space-1.2.1.AppImage).
+1. Unduh file [**`foto-space-1.2.2.AppImage`**](https://github.com/Stromzzz/fotospace-releases/releases/download/v1.2.2/foto-space-1.2.2.AppImage).
 2. Berikan izin eksekusi melalui terminal atau file manager:
    ```bash
-   chmod +x foto-space-1.2.1.AppImage
-   ./foto-space-1.2.1.AppImage
+   chmod +x foto-space-1.2.2.AppImage
+   ./foto-space-1.2.2.AppImage
    ```
 
 ---
 
-## ✨ Fitur Utama (v1.2.1)
+## ✨ Fitur Utama (v1.2.2)
 
 - **Upload Foto & Video ke FotoYu**: Pilih folder lewat dialog sistem OS, scan, lalu unggah ke galeri.
 - **Kompresi Hemat (default 50%)**: Perkecil foto otomatis agar hemat kuota; preset Hemat / Seimbang / Tajam + slider persen.
